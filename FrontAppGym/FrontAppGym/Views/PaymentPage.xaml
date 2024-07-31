@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FrontAppGym.Views.PaymentPage"             
+             Shell.NavBarIsVisible="False">
+    <ContentPage Title="2.Pagamento">
+    <ContentPage.Content>
+            <Frame HasShadow="True"
+                    BorderColor="DarkGray"
+                    CornerRadius="5"                                           
+                    Padding="20">
+                <StackLayout>                
+                    <StackLayout>                       
+                        
+                            
+                    <CarouselView ItemsSource="{Binding Plans}" x:Name="plansCarousel">
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+                                        <Label x:Name="labelPlan"
+                                               Text="Escolha seu Plano"
+                                               HeightRequest="40"
+                                               FontSize="Title"
+                                               TextColor="Black"
+                                               HorizontalOptions="Center"/>
+                                        <Frame HasShadow="True"
+                                           BorderColor="DarkGray"
+                                           CornerRadius="5"                                           
+                                           Padding="20"
+                                           Margin="40,0,40,0">
+
+                                            <Frame.Background>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                                <GradientStop Color="#9400D3" Offset="0.0" />
+                                                <GradientStop Color="#DDA0DD" Offset="1.0" />
+                                            </LinearGradientBrush>
+                                        </Frame.Background>
+                                        <StackLayout>
+                                            <Label Text="{Binding Name}"                                                   
+                                                   TextColor="LightSkyBlue"
+                                                   FontSize="25"                                                   
+                                                   HorizontalOptions="Center"/>
+                                            <Label Text="{Binding Amount}"                                                   
+                                                   TextColor="LightSkyBlue"
+                                                   FontSize="40"
+                                                   HorizontalOptions="Center"/>
+                                        </StackLayout>
+                                    </Frame>
+                                </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>                       
+                    </StackLayout>              
+            </StackLayout>
+            </Frame>
+        </ContentPage.Content>
+    </ContentPage>
+</TabbedPage>

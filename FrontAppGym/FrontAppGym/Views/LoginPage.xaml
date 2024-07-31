@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FrontAppGym.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    
+    <ContentPage.Content>
+        <Frame BackgroundColor="#DDA0DD">
+            <Frame.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#9400D3" Offset="0.0" />
+                    <GradientStop Color="#DDA0DD" Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+            <StackLayout Padding="10,0,10,0" VerticalOptions="CenterAndExpand">
+               
+                <Image Source="appgym_logo.png" 
+                       Aspect="AspectFit"
+                       WidthRequest="60"
+                       HeightRequest="60"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout BackgroundColor="#8B008B" HorizontalOptions="FillAndExpand" Margin="0,0,-5,0" Padding="10">
+                        <Image Source="icon_mail.png"
+                                Grid.Column="0"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                WidthRequest="36"
+                                HeightRequest="36"/>
+                    </StackLayout>
+                    <Entry x:Name="entryEmail" 
+                                Placeholder="E-mail"
+                                Grid.Column="1"
+                                Text="{Binding Email}"
+                                HeightRequest="60"                    
+                                BackgroundColor="#DDA0DD"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout BackgroundColor="#8B008B" HorizontalOptions="FillAndExpand" Margin="0,0,-5,0" Padding="10">
+                        <Image Source="icon_key.png"
+                                Grid.Column="0"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                WidthRequest="36"
+                                HeightRequest="36"/>
+                    </StackLayout>
+                    <Entry x:Name="entryPassword" 
+                            Placeholder="Senha"
+                            Grid.Column="1"
+                            Text="{Binding Password}"
+                            IsPassword="True"
+                            HeightRequest="60"                    
+                            BackgroundColor="#DDA0DD"/>
+                    <Image Source="icon_visibilityon.png"
+                            Grid.Column="1"
+                            VerticalOptions="Center"
+                            HorizontalOptions="End"
+                            WidthRequest="36"
+                            HeightRequest="36"
+                           Margin="0,10,5,10"
+                           x:Name="visibilityPassword">
+
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnChangedVisibilityPasswordOn"/>
+                        </Image.GestureRecognizers>                            
+                    </Image>
+                </Grid>
+                <Button VerticalOptions="Center" 
+                        Text="Login" 
+                        Command="{Binding LoginCommand}"
+                        BackgroundColor="#8B008B"/>
+                <Button VerticalOptions="Center" 
+                        Text="Novo por aqui? Cadastre-se"
+                        TextColor="Black"
+                        Command="{Binding RegisterCommand}"
+                        BackgroundColor="AliceBlue"/>
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
