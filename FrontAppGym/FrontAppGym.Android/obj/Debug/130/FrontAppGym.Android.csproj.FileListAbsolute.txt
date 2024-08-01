@@ -656,3 +656,4 @@ C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\D
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\Debug\130\res\drawable\icon_card.png
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\Debug\130\res\drawable\icon_pix.png
+C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\Debug\130\res\drawable\principal.jpeg

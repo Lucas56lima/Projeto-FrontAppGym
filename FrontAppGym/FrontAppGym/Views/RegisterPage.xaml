@@ -12,13 +12,12 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    <ContentPage.Content>
-        <ScrollView>
-
+    <ContentPage.Content>               
             <Frame  HasShadow="True" 
                     HorizontalOptions="CenterAndExpand"
                     CornerRadius="5"                                           
-                    Padding="20">
+                    
+                    VerticalOptions="FillAndExpand">
                 <Frame.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                         <GradientStop Color="#1C1C1C" Offset="0.0" />
@@ -94,7 +93,7 @@
                                 <Entry x:Name="entryPassword" 
                                Placeholder="Senha"
                                Grid.Column="1"
-                               Text="{Binding ConfirmPassword}"
+                               Text="{Binding Password}"
                                IsPassword="True"
                                Style="{StaticResource CustomEntryStyle}"
                                MaxLength="20"/>
@@ -198,253 +197,13 @@
                            Text="{Binding SpecialCondition}"                
                            Style="{StaticResource CustomEntryStyle}"/>
                         </StackLayout>
-                    </Frame>
-
-                    <Frame HasShadow="True"
-                           BorderColor="LightGray"
-                           CornerRadius="5"                                           
-                           Padding="20"
-                           HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent">
-                        <StackLayout>
-                            <Label x:Name="labelTextPlan" 
-                                    Text="2 - Escolha seu Plano"                                
-                                    HeightRequest="40"
-                                    TextColor="White"
-                                    FontSize="20"
-                                    HorizontalTextAlignment="Center"/>
-                            <Frame HasShadow="True"
-                                    BorderColor="LightGray"
-                                    CornerRadius="5"
-                                    Padding="10">
-                                <Frame.Background>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                                        <GradientStop Color="#6420AA" Offset="0.0" />
-                                        <GradientStop Color="#BA55D3" Offset="1.0" />
-                                    </LinearGradientBrush>
-                                </Frame.Background>                            
-                            <StackLayout>
-                                <Label Text="MENSAL - 1 MÊS DE ACESSO"                                                   
-                                       TextColor="White"
-                                       FontSize="16"                                                   
-                                       HorizontalOptions="Center"/>
-                                <Label Text="R$ 17,90/mês"                                                   
-                                       TextColor="White"
-                                       FontSize="32"
-                                       HorizontalOptions="Center"/>
-                                <Grid x:Name="paymentGrid">                                    
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Frame HasShadow="True"
-                                        BorderColor="LightGray"
-                                        CornerRadius="5"                                           
-                                        WidthRequest="95" 
-                                        BackgroundColor="Transparent"
-                                        Grid.Column="0">
-                                         <Frame.GestureRecognizers>
-                                              <TapGestureRecognizer Tapped="OnCardFrameTapped"/>
-                                          </Frame.GestureRecognizers>
-                                            <StackLayout>                                                
-                                                <Grid>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="Auto"/>
-                                                </Grid.ColumnDefinitions>
-                                                <Image Source="icon_card.png"
-                                                       Grid.Column="0"                                                        
-                                                        HorizontalOptions="Center"
-                                                        VerticalOptions="Center"
-                                                        WidthRequest="30"
-                                                        HeightRequest="30"/>
-                                                <Label x:Name="labelCard"
-                                                        Text="Cartão"
-                                                        TextColor="White"
-                                                        FontSize="18"
-                                                        HorizontalTextAlignment="Center"
-                                                        VerticalTextAlignment="Center"
-                                                        Grid.Column="1"/>
-                                           </Grid>                                                    
-                                        </StackLayout>                                        
-                                    </Frame>
-                                    <Frame HasShadow="True"
-                                            BorderColor="LightGray"
-                                            CornerRadius="5"                                                                                                                                                                             
-                                            HorizontalOptions="CenterAndExpand" 
-                                            BackgroundColor="Transparent"
-                                            Grid.Column="1">
-
-                                        <StackLayout>                   
-                                                <Grid>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="Auto"/>
-                                                </Grid.ColumnDefinitions>
-                                                <Image Source="icon_pix.png"
-                                                        Grid.Column="0"                                                        
-                                                        HorizontalOptions="Center"
-                                                        VerticalOptions="Center"
-                                                        WidthRequest="30"
-                                                        HeightRequest="30"/>
-                                              <Label x:Name="labelPix"
-                                                        Text="Pix"
-                                                        TextColor="White"
-                                                        FontSize="18"
-                                                        HorizontalTextAlignment="Center"
-                                                        VerticalTextAlignment="Center"
-                                                        Grid.Column="1"/>
-                                            </Grid>
-                                        </StackLayout>
-                                    </Frame>
-                                </Grid>                            
-                        </StackLayout>
-                            </Frame>
-                            <Frame HasShadow="True"
-                                    BorderColor="LightGray"
-                                    CornerRadius="5"
-                                    Padding="10">
-                            <Frame.Background>
-                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                                    <GradientStop Color="#6420AA" Offset="0.0" />
-                                    <GradientStop Color="#BA55D3" Offset="1.0" />
-                                </LinearGradientBrush>
-                            </Frame.Background>
-
-                            <StackLayout>
-                                <Label Text="TRIMESTRAL - 3 MESES DE ACESSO"                                                   
-                                       TextColor="White"
-                                       FontSize="16"                                                   
-                                       HorizontalOptions="Center"/>
-                                <Label Text="R$ 15,90/mês"                                                   
-                                       TextColor="White"
-                                       FontSize="32"
-                                       HorizontalOptions="Center"/>
-                                <Grid x:Name="paymentGridMonths">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Frame HasShadow="True"
-                                        BorderColor="LightGray"
-                                        CornerRadius="5"                                           
-                                        WidthRequest="95" 
-                                        BackgroundColor="Transparent"
-                                        Grid.Column="0">
-
-                                        <StackLayout>
-                                            <Grid>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="Auto"/>
-                                                </Grid.ColumnDefinitions>
-                                                <Image Source="icon_card.png"
-                                                       Grid.Column="0"                                                        
-                                                        HorizontalOptions="Center"
-                                                        VerticalOptions="Center"
-                                                        WidthRequest="30"
-                                                        HeightRequest="30"/>
-                                                <Label x:Name="labelCardTri"
-                                                        Text="Cartão"
-                                                        TextColor="White"
-                                                        FontSize="18"
-                                                        HorizontalTextAlignment="Center"
-                                                        VerticalTextAlignment="Center"
-                                                        Grid.Column="1"/>
-                                            </Grid>
-                                        </StackLayout>
-                                    </Frame>
-                                    <Frame HasShadow="True"
-                                            BorderColor="LightGray"
-                                            CornerRadius="5"                                                                                                                                                                             
-                                            HorizontalOptions="CenterAndExpand" 
-                                            BackgroundColor="Transparent"
-                                            Grid.Column="1">
-
-                                        <StackLayout>
-                                            <Grid>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="Auto"/>
-                                                </Grid.ColumnDefinitions>
-                                                <Image Source="icon_pix.png"
-                                                        Grid.Column="0"                                                        
-                                                        HorizontalOptions="Center"
-                                                        VerticalOptions="Center"
-                                                        WidthRequest="30"
-                                                        HeightRequest="30"/>
-                                                <Label x:Name="labelPixTri"
-                                                        Text="Pix"
-                                                        TextColor="White"
-                                                        FontSize="18"
-                                                        HorizontalTextAlignment="Center"
-                                                        VerticalTextAlignment="Center"
-                                                        Grid.Column="1"/>
-                                            </Grid>
-                                        </StackLayout>
-                                    </Frame>
-                                </Grid>
-                            </StackLayout>
-                    </Frame>
-                            <Grid Padding="20">
-                                <!-- Button to show the card -->                              
-
-                                    <!-- Card Layout -->
-                                    <Frame x:Name="CardFrame" 
-                                            BackgroundColor="White" 
-                                            CornerRadius="10" 
-                                            HasShadow="True" 
-                                            HeightRequest="200" 
-                                            WidthRequest="350"
-                                            IsVisible="False">
-                                        <Grid Padding="10">
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="*"/>
-                                                <RowDefinition Height="Auto"/>
-                                            </Grid.RowDefinitions>
-
-                                            <!-- Card Number -->
-                                            <Label x:Name="CardNumberLabel" 
-                                                   Text="**** **** **** ****" 
-                                                   FontSize="20" 
-                                                   VerticalOptions="Center" 
-                                                   HorizontalOptions="Center" 
-                                                   Grid.Row="0"/>
-
-                                            <!-- Card Holder Name -->
-                                            <Label x:Name="CardHolderLabel" 
-                                                   Text="CARDHOLDER NAME" 
-                                                   FontSize="14" 
-                                                   HorizontalOptions="Center" 
-                                                   Grid.Row="1"/>
-
-                                            <!-- Expiration Date -->
-                                            <Label x:Name="ExpirationDateLabel" 
-                       Text="MM/YY" 
-                       FontSize="14" 
-                       HorizontalOptions="End" 
-                       VerticalOptions="End" 
-                       Grid.Row="1"/>
-                                        </Grid>
-                                    </Frame>
-
-                                    <!-- Entry Fields -->
-                                    <StackLayout Padding="10" 
-                     Spacing="10" 
-                     VerticalOptions="FillAndExpand">
-                                        <Entry x:Name="CardNumberEntry" 
-                   Placeholder="Card Number" 
-                   TextChanged="OnCardNumberTextChanged"/>
-                                        <Entry x:Name="CardHolderEntry" 
-                   Placeholder="Cardholder Name" 
-                   TextChanged="OnCardHolderTextChanged"/>
-                                        <Entry x:Name="ExpirationDateEntry" 
-                   Placeholder="MM/YY" 
-                   TextChanged="OnExpirationDateTextChanged"/>
-                                    </StackLayout>
-                            </Grid>
-                        </StackLayout>
-                    </Frame>
-                    
+                    </Frame>                  
+                                      
                     <Button VerticalOptions="Center" 
                             Text="Avançar"
                             Command="{Binding PaymentCommand}"
                             BackgroundColor="#8B008B"/>
                 </StackLayout>
-            </Frame>
-        </ScrollView>
+            </Frame>        
     </ContentPage.Content>
 </ContentPage>

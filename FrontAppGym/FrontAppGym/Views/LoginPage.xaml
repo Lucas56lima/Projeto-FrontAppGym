@@ -6,22 +6,17 @@
              mc:Ignorable="d"
              x:Class="FrontAppGym.Views.LoginPage"
              Shell.NavBarIsVisible="False">
-    
+
     <ContentPage.Content>
         <Frame BackgroundColor="#DDA0DD">
             <Frame.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                    <GradientStop Color="#9400D3" Offset="0.0" />
-                    <GradientStop Color="#DDA0DD" Offset="1.0" />
+                    <GradientStop Color="#1C1C1C" Offset="0.0" />
+                    <GradientStop Color="#9400D3" Offset="1.0" />
                 </LinearGradientBrush>
             </Frame.Background>
 
-            <StackLayout Padding="10,0,10,0" VerticalOptions="CenterAndExpand">
-               
-                <Image Source="appgym_logo.png" 
-                       Aspect="AspectFit"
-                       WidthRequest="60"
-                       HeightRequest="60"/>
+            <StackLayout Padding="10,0,10,0" VerticalOptions="CenterAndExpand">               
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -73,7 +68,7 @@
 
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnChangedVisibilityPasswordOn"/>
-                        </Image.GestureRecognizers>                            
+                        </Image.GestureRecognizers>
                     </Image>
                 </Grid>
                 <Button VerticalOptions="Center" 

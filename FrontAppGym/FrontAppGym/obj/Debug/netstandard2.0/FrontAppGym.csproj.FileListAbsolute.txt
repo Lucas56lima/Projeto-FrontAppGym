@@ -20,3 +20,4 @@ C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\net
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.dll
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\refint\FrontAppGym.dll
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.pdb
+C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.sourcelink.json

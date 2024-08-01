@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using FrontAppGym.ViewModels;
 using Xamarin.Forms;
@@ -10,7 +11,7 @@ namespace FrontAppGym.Views
 	public partial class RegisterPage : ContentPage
 	{
         private bool _isUpdatingText = false;
-        private bool _navigationEnabled = false;
+        private Grid _cardGrid;
         public RegisterPage ()
 		{
 			InitializeComponent ();
@@ -132,45 +133,98 @@ namespace FrontAppGym.Views
         //    };
 
         //}
+        //private void OnCardFrameTapped(object sender, EventArgs e)
+        //{
+        //    CreateCardGrid(stackPaymentsMouth);
+        //}
 
-        private void OnCardFrameTapped(object sender, EventArgs e)
+        private void CreateCardGrid(StackLayout stackLayout)
         {
-            CardFrame.IsVisible = true;
+            if (_cardGrid == null)
+            {
+                _cardGrid = new Grid
+                {
+                    Padding = 10,
+                    Children =
+                        {
+                            new Frame
+                            {
+                                BackgroundColor = Color.LightGray,
+                                CornerRadius = 10,
+                                HasShadow = true,
+                                HeightRequest = 70,
+                                WidthRequest = 200,
+                                HorizontalOptions = LayoutOptions.FillAndExpand,
+                                VerticalOptions = LayoutOptions.Start,
+                                Content = new Grid
+                                {
+                                    Padding = 10,
+                                    RowDefinitions =
+                                    {
+                                        new RowDefinition{Height = GridLength.Star},
+                                        new RowDefinition{Height = GridLength.Auto}
+                                    },
+                                    Children =
+                                    {
+                                        new Label
+                                        {
+                                            Text = "**** **** **** ****",
+                                            FontSize = 18,
+                                            VerticalOptions = LayoutOptions.Center,
+                                            HorizontalOptions = LayoutOptions.Center,
+                                            TextColor = Color.Black
+                                        }
+                                    }
+                                }
+                            }
+                         }
+                };
+                stackLayout.Children.Add(_cardGrid);
+            }
+            else
+            {
+                _cardGrid.IsVisible = !_cardGrid.IsVisible;
+            }           
         }
 
-        private void OnCardNumberTextChanged(object sender, TextChangedEventArgs e)
-        {
-            string text = e.NewTextValue;
-            CardNumberLabel.Text = FormatCardNumber(text);
-        }
 
-        private void OnCardHolderTextChanged(object sender, TextChangedEventArgs e)
-        {
-            string text = e.NewTextValue.ToUpper();
-            CardHolderLabel.Text = string.IsNullOrEmpty(text) ? "CARDHOLDER NAME" : text;
-        }
 
-        private void OnExpirationDateTextChanged(object sender, TextChangedEventArgs e)
-        {
-            string text = e.NewTextValue;
-            ExpirationDateLabel.Text = string.IsNullOrEmpty(text) ? "MM/YY" : text;
-        }
+
+
+
+        //private void OnCardNumberTextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    string text = e.NewTextValue;
+        //    CardNumberLabel.Text = FormatCardNumber(text);
+        //}
+
+        //private void OnCardHolderTextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    string text = e.NewTextValue.ToUpper();
+        //    CardHolderLabel.Text = string.IsNullOrEmpty(text) ? "" : text;
+        //}
+
+        //private void OnExpirationDateTextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    string text = e.NewTextValue;
+        //    ExpirationDateLabel.Text = string.IsNullOrEmpty(text) ? "MM/YY" : text;
+        //}
 
         private string FormatCardNumber(string cardNumber)
         {
             // Remove non-numeric characters
             cardNumber = new string(cardNumber.Where(char.IsDigit).ToArray());
 
-            // Format as #### #### #### ####
-            if (cardNumber.Length > 12)
+            // Ensure the cardNumber has enough characters
+            if (cardNumber.Length >= 16)
             {
                 return $"{cardNumber.Substring(0, 4)} {cardNumber.Substring(4, 4)} {cardNumber.Substring(8, 4)} {cardNumber.Substring(12, 4)}";
             }
-            else if (cardNumber.Length > 8)
+            else if (cardNumber.Length >= 12)
             {
                 return $"{cardNumber.Substring(0, 4)} {cardNumber.Substring(4, 4)} {cardNumber.Substring(8)}";
             }
-            else if (cardNumber.Length > 4)
+            else if (cardNumber.Length >= 8)
             {
                 return $"{cardNumber.Substring(0, 4)} {cardNumber.Substring(4)}";
             }
