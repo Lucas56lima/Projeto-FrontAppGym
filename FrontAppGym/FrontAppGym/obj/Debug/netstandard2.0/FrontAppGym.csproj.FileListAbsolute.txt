@@ -12,6 +12,7 @@ C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\net
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.AssemblyInfoInputs.cache
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.AssemblyInfo.cs
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.sourcelink.json
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\bin\Debug\netstandard2.0\FrontAppGym.deps.json
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\bin\Debug\netstandard2.0\FrontAppGym.dll
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\bin\Debug\netstandard2.0\ref\FrontAppGym.dll
@@ -20,4 +21,3 @@ C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\net
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.dll
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\refint\FrontAppGym.dll
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.pdb
-C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.sourcelink.json

@@ -8,13 +8,13 @@ using Xamarin.Forms.Xaml;
 namespace FrontAppGym.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class RegisterPage : ContentPage
-	{
+    public partial class RegisterPage : ContentPage
+    {
         private bool _isUpdatingText = false;
         private Grid _cardGrid;
-        public RegisterPage ()
-		{
-			InitializeComponent ();
+        public RegisterPage()
+        {
+            InitializeComponent();
             //LoadStripeCheckout();
             this.BindingContext = new RegisterViewModel();
         }
@@ -60,7 +60,7 @@ namespace FrontAppGym.Views
             var cleanedText = new string(newText.Where(char.IsDigit).ToArray());
 
             // Adiciona barras para formato dd/MM/yyyy
-            if(cleanedText.Length > 1)
+            if (cleanedText.Length > 1)
             {
                 cleanedText = cleanedText.Insert(0, "(");
             }
@@ -92,7 +92,7 @@ namespace FrontAppGym.Views
             visibilityPassword.GestureRecognizers.Clear(); // Limpar os reconhecedores de gesto existentes
             visibilityPassword.GestureRecognizers.Add(tapGestureRecognizer);
             var password = entryPassword.Text;
-            if (password != null)            
+            if (password != null)
                 entryPassword.CursorPosition = password.Length;
         }
         private void OnChangedVisibilityPasswordOff(object obj, EventArgs e)
@@ -108,20 +108,20 @@ namespace FrontAppGym.Views
             if (password != null)
                 entryPassword.CursorPosition = password.Length;
         }
-        
+
         private void OnVerifyPassword(object obj, TextChangedEventArgs e)
         {
             string password = entryPassword.Text;
-            if(password.Length < 6 || password == null)
+            if (password.Length < 6 || password == null)
             {
                 DisplayAlert("Atenção", "Senha deve ter mais do que 6 caracteres.", "Ok");
             }
-                
+
             string confirmPassword = entryConfirmPassword.Text;
             if (password != confirmPassword)
                 labelConfirmPassword.IsVisible = true;
-                labelConfirmPassword.Text = "As senhas não correspondem!";
-                labelConfirmPassword.TextColor = Color.White;
+            labelConfirmPassword.Text = "As senhas não correspondem!";
+            labelConfirmPassword.TextColor = Color.White;
         }
 
         //private async void LoadStripeCheckout()
@@ -184,54 +184,8 @@ namespace FrontAppGym.Views
             else
             {
                 _cardGrid.IsVisible = !_cardGrid.IsVisible;
-            }           
-        }
-
-
-
-
-
-
-        //private void OnCardNumberTextChanged(object sender, TextChangedEventArgs e)
-        //{
-        //    string text = e.NewTextValue;
-        //    CardNumberLabel.Text = FormatCardNumber(text);
-        //}
-
-        //private void OnCardHolderTextChanged(object sender, TextChangedEventArgs e)
-        //{
-        //    string text = e.NewTextValue.ToUpper();
-        //    CardHolderLabel.Text = string.IsNullOrEmpty(text) ? "" : text;
-        //}
-
-        //private void OnExpirationDateTextChanged(object sender, TextChangedEventArgs e)
-        //{
-        //    string text = e.NewTextValue;
-        //    ExpirationDateLabel.Text = string.IsNullOrEmpty(text) ? "MM/YY" : text;
-        //}
-
-        private string FormatCardNumber(string cardNumber)
-        {
-            // Remove non-numeric characters
-            cardNumber = new string(cardNumber.Where(char.IsDigit).ToArray());
-
-            // Ensure the cardNumber has enough characters
-            if (cardNumber.Length >= 16)
-            {
-                return $"{cardNumber.Substring(0, 4)} {cardNumber.Substring(4, 4)} {cardNumber.Substring(8, 4)} {cardNumber.Substring(12, 4)}";
-            }
-            else if (cardNumber.Length >= 12)
-            {
-                return $"{cardNumber.Substring(0, 4)} {cardNumber.Substring(4, 4)} {cardNumber.Substring(8)}";
-            }
-            else if (cardNumber.Length >= 8)
-            {
-                return $"{cardNumber.Substring(0, 4)} {cardNumber.Substring(4)}";
-            }
-            else
-            {
-                return cardNumber;
             }
         }
-    }    
+
+    }   
 }

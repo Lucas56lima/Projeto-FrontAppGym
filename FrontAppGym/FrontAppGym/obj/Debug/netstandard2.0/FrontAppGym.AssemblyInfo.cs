@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FrontAppGym")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b42aa59227161fad6b1f8cb3c9447252f40d2734")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b15efc14d1bdbefe860398157f6adf4c6da0db9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("FrontAppGym")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FrontAppGym")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
