@@ -9,6 +9,7 @@ C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\net
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\Views\PaymentPage.xaml.g.cs
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\Views\RegisterPage.xaml.g.cs
+C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\Views\WorkoutPage.xaml.g.cs
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.AssemblyInfoInputs.cache
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.AssemblyInfo.cs
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym\obj\Debug\netstandard2.0\FrontAppGym.csproj.CoreCompileInputs.cache

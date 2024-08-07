@@ -9,10 +9,17 @@ namespace FrontAppGym.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "About";
+            
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
+            OpenWorkoutPage = new Command(OnOpenWorkoutPage);
+        }
+
+        private async void OnOpenWorkoutPage(object obj)
+        {
+            await Shell.Current.GoToAsync("//WorkoutPage");
         }
 
         public ICommand OpenWebCommand { get; }
+        public Command OpenWorkoutPage {  get; }
     }
 }

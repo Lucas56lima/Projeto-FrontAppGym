@@ -10,12 +10,14 @@ namespace FrontAppGym.Views
 	public partial class PaymentPage : ContentPage
 	{
         private bool _isUpdating = false;
+        private LoginViewModel _loginViewModel;
 
         public PaymentPage ()
 		{
-			InitializeComponent ();
-			//this.BindingContext = new RegisterViewModel();
-		}
+			InitializeComponent ();           
+            _loginViewModel = new LoginViewModel ();
+            BindingContext = _loginViewModel;
+        }
 
         private void OnCardFrameTapped(object sender, EventArgs e)
         {
@@ -23,6 +25,15 @@ namespace FrontAppGym.Views
            FrameThrMouth.IsVisible = !FrameThrMouth.IsVisible;
            FrameYear.IsVisible = !FrameYear.IsVisible;
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            if (_loginViewModel.RegisterCommand.CanExecute(null))
+            {
+                _loginViewModel.RegisterCommand.Execute(null);
+            }
+            return true;
+        }        
 
         private void OnCardNumberTextChanged(object sender, TextChangedEventArgs e)
         {
@@ -90,6 +101,7 @@ namespace FrontAppGym.Views
             }
             else
             {
+                cardNumber = "**** **** **** ****";
                 return cardNumber;
             }
         }

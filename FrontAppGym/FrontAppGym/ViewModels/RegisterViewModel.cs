@@ -10,6 +10,7 @@ namespace FrontAppGym.ViewModels
     {
         private string _name;
         public Command PaymentCommand { get;}
+        public Command LoginBackCommand { get;}
         public string Name
         {
             get => _name;
@@ -77,6 +78,12 @@ namespace FrontAppGym.ViewModels
             };
 
             PaymentCommand = new Command(OnPaymentClicked);
+            LoginBackCommand = new Command(OnLoginBackClicked);
+        }
+
+        private async void OnLoginBackClicked(object obj)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(LoginPage)}");
         }
 
         private async void OnPaymentClicked(object obj)

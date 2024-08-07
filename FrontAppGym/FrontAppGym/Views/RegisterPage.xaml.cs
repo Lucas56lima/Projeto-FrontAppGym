@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Linq;
 using FrontAppGym.ViewModels;
 using Xamarin.Forms;
@@ -10,13 +9,14 @@ namespace FrontAppGym.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegisterPage : ContentPage
     {
-        private bool _isUpdatingText = false;
-        private Grid _cardGrid;
+        private bool _isUpdatingText = false;        
+        private RegisterViewModel _registerViewModel;
         public RegisterPage()
         {
             InitializeComponent();
             //LoadStripeCheckout();
-            this.BindingContext = new RegisterViewModel();
+            _registerViewModel = new RegisterViewModel();           
+            BindingContext = _registerViewModel;
         }
 
         private void OnDateEntryTextChanged(object sender, TextChangedEventArgs e)
@@ -138,53 +138,13 @@ namespace FrontAppGym.Views
         //    CreateCardGrid(stackPaymentsMouth);
         //}
 
-        private void CreateCardGrid(StackLayout stackLayout)
+        protected override bool OnBackButtonPressed()
         {
-            if (_cardGrid == null)
+            if (_registerViewModel.LoginBackCommand.CanExecute(null))
             {
-                _cardGrid = new Grid
-                {
-                    Padding = 10,
-                    Children =
-                        {
-                            new Frame
-                            {
-                                BackgroundColor = Color.LightGray,
-                                CornerRadius = 10,
-                                HasShadow = true,
-                                HeightRequest = 70,
-                                WidthRequest = 200,
-                                HorizontalOptions = LayoutOptions.FillAndExpand,
-                                VerticalOptions = LayoutOptions.Start,
-                                Content = new Grid
-                                {
-                                    Padding = 10,
-                                    RowDefinitions =
-                                    {
-                                        new RowDefinition{Height = GridLength.Star},
-                                        new RowDefinition{Height = GridLength.Auto}
-                                    },
-                                    Children =
-                                    {
-                                        new Label
-                                        {
-                                            Text = "**** **** **** ****",
-                                            FontSize = 18,
-                                            VerticalOptions = LayoutOptions.Center,
-                                            HorizontalOptions = LayoutOptions.Center,
-                                            TextColor = Color.Black
-                                        }
-                                    }
-                                }
-                            }
-                         }
-                };
-                stackLayout.Children.Add(_cardGrid);
+                _registerViewModel.LoginBackCommand.Execute(null);
             }
-            else
-            {
-                _cardGrid.IsVisible = !_cardGrid.IsVisible;
-            }
+            return true;
         }
 
     }   

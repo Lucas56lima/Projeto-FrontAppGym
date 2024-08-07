@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FrontAppGym.Views.AboutPage"
-             xmlns:vm="clr-namespace:FrontAppGym.ViewModels"
-             Title="{Binding Title}">
+             xmlns:vm="clr-namespace:FrontAppGym.ViewModels">
 
     <ContentPage.BindingContext>
         <vm:AboutViewModel />
@@ -20,81 +19,55 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <Frame BackgroundColor="#DDA0DD">
-                <Frame.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#8B008B" Offset="0.0" />
-                        <GradientStop Color="#9932CC" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Frame.Background>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                    <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                        <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
-                    </ContentView>
-                </StackLayout>
-            </Frame>
+        <StackLayout VerticalOptions="FillAndExpand">            
+                <Label Text="Aqui Ficará o logo" TextColor="Black" FontSize="Title" HorizontalTextAlignment="Start" Padding="60"/>           
         </StackLayout>
-        <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="15,12,15,12" Spacing="10">
-                <StackLayout HeightRequest="350">
-                    <Grid BackgroundColor="LightGray" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand" >                        
-
+        <AbsoluteLayout Grid.Row="0" Margin="0,160,0,0">
+            <StackLayout Orientation="Vertical" Padding="15,12,15,12" VerticalOptions="FillAndExpand">               
+                    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
                         <Button Grid.Row="0" 
-                                Grid.Column="0" 
-                                Margin="10,10,10,10"     
-                                Text="Treinos"                                
-                                Command="{Binding OpenWebCommand}"
-                                BackgroundColor="{StaticResource Primary}"
-                                TextColor="White" 
-                                CornerRadius="30"
-                                ImageSource="icon_workout"/>
-
+                                Grid.Column="0"                                     
+                                Text="Treinos"
+                                HeightRequest="100"
+                                Command="{Binding OpenWorkoutPage}"
+                                BackgroundColor="#8B008B"
+                                TextColor="White"/>
                         <Button Grid.Row="0" 
-                                Grid.Column="1" 
-                                Margin="10,10,10,10"    
+                                Grid.Column="1"                               
                                 Text="Danças"
+                                HeightRequest="100"
                                 Command="{Binding OpenWebCommand}"
-                                BackgroundColor="{StaticResource Primary}"
-                                TextColor="White" 
-                                CornerRadius="30"/>
+                                BackgroundColor="#8B008B"
+                                TextColor="White"/>
                         <Button Grid.Row="1" 
-                                Grid.Column="0" 
-                                Margin="10,10,10,10"      
+                                Grid.Column="0"                                
                                 Text="Learn more"
                                 Command="{Binding OpenWebCommand}"
-                                BackgroundColor="{StaticResource Primary}"
-                                TextColor="White" 
-                                CornerRadius="30"/>
+                                BackgroundColor="#8B008B"
+                                TextColor="White"/>
                         <Button Grid.Row="1" 
-                                Grid.Column="1" 
-                                Margin="10,10,10,10"     
+                                Grid.Column="1"                                     
                                 Text="Learn more"
+                                HeightRequest="100"
                                 Command="{Binding OpenWebCommand}"
-                                BackgroundColor="{StaticResource Primary}"
-                                TextColor="White" 
-                                CornerRadius="30"/>
+                                BackgroundColor="#8B008B"
+                                TextColor="White"/>
                         <Button Grid.Row="2" 
-                                Grid.Column="0" 
-                                Margin="10,10,10,10"    
+                                Grid.Column="0"                                    
                                 Text="Learn more"
                                 Command="{Binding OpenWebCommand}"
-                                BackgroundColor="{StaticResource Primary}"
-                                TextColor="White" 
-                                CornerRadius="30"
-                                />
+                                BackgroundColor="#8B008B"
+                                TextColor="White"/>
                         <Button Grid.Row="2" 
-                                Grid.Column="1" 
-                                Margin="10,10,10,10"  
+                                Grid.Column="1"
+                                HeightRequest="100"
                                 Text="Learn more"
                                 Command="{Binding OpenWebCommand}"
-                                BackgroundColor="{StaticResource Primary}"
-                                TextColor="White" 
-                                CornerRadius="30"/>
-                    </Grid>
-                </StackLayout>
+                                BackgroundColor="#8B008B"
+                                TextColor="White"/>
+                    </Grid>                
             </StackLayout>
-        </ScrollView>
+        </AbsoluteLayout>
         
     </Grid>
 </ContentPage>

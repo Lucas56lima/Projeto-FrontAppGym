@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using FrontAppGym.Views;
 using Newtonsoft.Json.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.StyleSheets;
 
 namespace FrontAppGym.ViewModels
 {
@@ -15,16 +17,31 @@ namespace FrontAppGym.ViewModels
         public string Email { get; set; }
         public string Password { get; set; }
         public Command LoginCommand { get; }
-        public Command RegisterCommand { get; }        
+        public Command RegisterCommand { get; }
+        public Command BackCommand { get; }
         public LoginViewModel()
         {
             LoginCommand = new Command(OnLoginClicked);
-            RegisterCommand = new Command(OnRegisterClicked);            
+            RegisterCommand = new Command(OnRegisterClicked);
+            BackCommand = new Command(OnBackCommand);
         }
+
+        private async void OnBackCommand(object obj)
+        {
+            // Verifique se a navegação está disponível e se há uma página anterior
+            if (Shell.Current.Navigation.NavigationStack.Count > 1)
+            {
+                await Shell.Current.GoToAsync("..");
+            }
+            else
+            {
+                await Shell.Current.GoToAsync("//LoginPage");
+            }
+        }
+
         private async void OnRegisterClicked(object obj)
         {
-
-            await Shell.Current.GoToAsync($"//{nameof(RegisterPage)}");
+          await Shell.Current.GoToAsync($"//{nameof(RegisterPage)}");
         }
 
         private async void OnLoginClicked(object obj)

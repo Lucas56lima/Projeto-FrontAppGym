@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using FrontAppGym.ViewModels;
+using Xamarin.Forms;
 
 namespace FrontAppGym.Views
 {
@@ -7,6 +8,7 @@ namespace FrontAppGym.Views
         public AboutPage()
         {
             InitializeComponent();
+            BindingContext = new AboutViewModel();
         }
     }
 }

@@ -20,9 +20,11 @@
                     VerticalOptions="FillAndExpand">
                 <Frame.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#1C1C1C" Offset="0.0" />
-                        <GradientStop Color="#9400D3" Offset="1.0" />                        
-                    </LinearGradientBrush>
+                    <GradientStop Color="#1C1C1C" Offset="0.0" />
+                    <GradientStop Color="#9400D3" Offset="0.5" />
+                    <GradientStop Color="#9400D3" Offset="0.3" />
+                    <GradientStop Color="#1C1C1C" Offset="1.0"/>
+                </LinearGradientBrush>
                 </Frame.Background>
                 <StackLayout Padding="10,0,10,0" VerticalOptions="CenterAndExpand">
                     <Frame HasShadow="True" 
@@ -203,7 +205,13 @@
                             Text="Avançar"
                             Command="{Binding PaymentCommand}"
                             BackgroundColor="#8B008B"/>
-                </StackLayout>
+                <Button VerticalOptions="Center" 
+                            Text="Voltar"
+                            Command="{Binding LoginBackCommand}"
+                            BackgroundColor="LightGray"                            
+                            TextColor="Black"/>
+                 </StackLayout>
+                
             </Frame>        
     </ContentPage.Content>
 </ContentPage>

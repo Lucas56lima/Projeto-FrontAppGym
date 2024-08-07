@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="FrontAppGym.Views.WorkoutPage"
+            Shell.NavBarIsVisible="False">
+
+    <!-- Layout da Página -->
+    <ContentPage.Content>
+        <Frame Margin="15" Padding="0" VerticalOptions="StartAndExpand" 
+           BackgroundColor="AntiqueWhite" CornerRadius="5">
+            <StackLayout>
+                <StackLayout VerticalOptions="Center" 
+                         HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label Margin="10,10,10,10" Text="Fotos" FontAttributes="Bold" />
+                </StackLayout>
+                <CarouselView PeekAreaInsets="120">
+                    <CarouselView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Hipertrofia</x:String>
+                            <x:String>Performance</x:String>
+                            <x:String>Emagrecimento</x:String>
+                        </x:Array>
+                    </CarouselView.ItemsSource>
+                    <CarouselView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
+                    </CarouselView.ItemsLayout>
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate >
+                            <StackLayout>
+                                <Frame HasShadow="True"
+                               BorderColor="DarkGray"
+                               CornerRadius="5"
+                               Margin="10"
+                               HorizontalOptions="Center"
+                               VerticalOptions="CenterAndExpand">
+                                    <StackLayout>                                        
+                                        <Label Text="Aqui ficará a Informação." HorizontalOptions="Center" />
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+
+</ContentPage>

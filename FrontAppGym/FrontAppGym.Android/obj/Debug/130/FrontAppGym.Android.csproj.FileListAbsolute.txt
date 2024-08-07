@@ -78,6 +78,7 @@ C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\D
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\Debug\130\res\drawable\icon_card.png
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\Debug\130\res\drawable\icon_pix.png
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\Debug\130\res\drawable\principal.jpeg
+C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\Debug\130\res\drawable\icon_back.png
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\Debug\130\uploadflags.txt
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\Debug\130\resolvedassemblies.hash
 C:\Users\Usuário\source\repos\FrontAppGym\FrontAppGym\FrontAppGym.Android\obj\Debug\130\android\assets\FormsViewGroup.dll
