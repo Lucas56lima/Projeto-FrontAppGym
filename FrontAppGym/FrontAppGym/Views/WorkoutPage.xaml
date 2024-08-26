@@ -1,48 +1,91 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            x:Class="FrontAppGym.Views.WorkoutPage"
-            Shell.NavBarIsVisible="False">
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FrontAppGym.Views.WorkoutPage"
+             xmlns:vm="clr-namespace:FrontAppGym.ViewModels"
+             Shell.NavBarIsVisible="False">
 
-    <!-- Layout da Página -->
+    <ContentPage.BindingContext>
+        <vm:WorkoutViewModel/>
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
-        <Frame Margin="15" Padding="0" VerticalOptions="StartAndExpand" 
-           BackgroundColor="AntiqueWhite" CornerRadius="5">
-            <StackLayout>
-                <StackLayout VerticalOptions="Center" 
-                         HorizontalOptions="FillAndExpand" Orientation="Horizontal">
-                    <Label Margin="10,10,10,10" Text="Fotos" FontAttributes="Bold" />
-                </StackLayout>
-                <CarouselView PeekAreaInsets="120">
-                    <CarouselView.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Hipertrofia</x:String>
-                            <x:String>Performance</x:String>
-                            <x:String>Emagrecimento</x:String>
-                        </x:Array>
-                    </CarouselView.ItemsSource>
-                    <CarouselView.ItemsLayout>
-                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
-                    </CarouselView.ItemsLayout>
-                    <CarouselView.ItemTemplate>
-                        <DataTemplate >
-                            <StackLayout>
-                                <Frame HasShadow="True"
-                               BorderColor="DarkGray"
-                               CornerRadius="5"
-                               Margin="10"
-                               HorizontalOptions="Center"
-                               VerticalOptions="CenterAndExpand">
-                                    <StackLayout>                                        
-                                        <Label Text="Aqui ficará a Informação." HorizontalOptions="Center" />
-                                    </StackLayout>
-                                </Frame>
+        <ScrollView>
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Text="TREINOS" FontSize="Large" VerticalOptions="Center" TextColor="Black" Grid.Row="0" Margin="10"/>
+
+                <Grid Grid.Row="1" ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Entry Placeholder="Pesquisar"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="Center"
+                           PlaceholderColor="DarkGray" Margin="10" TextColor="Black"/>
+                        <Image Source="icon_search.png"
+                           Grid.Column="1"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           WidthRequest="30"
+                           HeightRequest="30">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnOpenFilterTab"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Image Source="icon_filter.png"
+                           Grid.Column="2"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           WidthRequest="30"
+                           HeightRequest="30">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnOpenFilterTab"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </StackLayout>
+                </Grid>
+                <StackLayout Padding="10" Grid.Row="2">
+                    <Label Text="Últimos Acessados" FontSize="Medium" TextColor="Black"/>                    
+                        <CarouselView x:Name="latestCarousel" Loop="False" BackgroundColor="Blue" HeightRequest="150">
+                            <CarouselView.ItemTemplate>
+                                <DataTemplate>                                   
+                                        <StackLayout BackgroundColor="White">
+                                            <Label Text="Inicie sua jornada de tonificação corporal" FontSize="Small" TextColor="White"/>
+                                            <Button Text="COMEÇO" BackgroundColor="White" TextColor="Black" CornerRadius="15" HorizontalOptions="Center"/>
+                                        </StackLayout>                                    
+                                </DataTemplate>
+                            </CarouselView.ItemTemplate>
+                        </CarouselView>
+                    <ScrollView x:Name="scrollView" Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" Padding="10" Spacing="10" Grid.Row="3">
+                            <Button x:Name="btnBeginner" Text="Iniciante" Clicked="OnButtonClicked" TextColor="Gray" BackgroundColor="Transparent" BorderWidth="1"/>
+                            <Button x:Name="btnIntermediary" Text="Intermediário" Clicked="OnButtonClicked" TextColor="Gray" BackgroundColor="Transparent" BorderWidth="1"/>
+                            <Button x:Name="btnAdvanced" Text="Avançado" Clicked="OnButtonClicked" TextColor="Gray" BackgroundColor="Transparent" BorderWidth="1"/>
+                    </StackLayout>
+                    </ScrollView>
+                </StackLayout>            
+                   
+                <CollectionView Grid.Row="4">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Vertical">
+                                <Image Source="abdomen_iniciante.jpg" Aspect="AspectFill" HeightRequest="100"/>
+                                <Label Text="ABDÔMEN INICIANTE" FontSize="Medium" TextColor="White"/>
+                                <Label Text="20 MIN · 16 EXERCÍCIOS" FontSize="Small" TextColor="White"/>
                             </StackLayout>
                         </DataTemplate>
-                    </CarouselView.ItemTemplate>
-                </CarouselView>
-            </StackLayout>
-        </Frame>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
-
 </ContentPage>

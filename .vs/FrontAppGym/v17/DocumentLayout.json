@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\views\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\views\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\viewmodels\\aboutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\viewmodels\\aboutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\views\\workoutpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
       "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\views\\workoutpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
@@ -19,32 +11,28 @@
       "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\views\\workoutpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\views\\loginpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\views\\loginpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\views\\registerpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\views\\registerpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\views\\paymentpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
       "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\views\\paymentpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\views\\aboutpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\views\\aboutpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\views\\aboutpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\views\\aboutpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\viewmodels\\workoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\viewmodels\\workoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\views\\registerpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\views\\registerpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\appshell.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\appshell.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+      "AbsoluteMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\frontappgym\\frontappgym\\frontappgym\\views\\loginpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{BD22ACF5-A3E3-4EF9-907F-8BF621FC0C7A}|FrontAppGym\\FrontAppGym\\FrontAppGym.csproj|solutionrelative:frontappgym\\frontappgym\\views\\loginpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,107 +54,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WorkoutPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml.cs",
-              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml.cs",
-              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBIAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T15:57:12.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WorkoutPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml",
-              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml",
-              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml",
-              "ViewState": "AQIAABQAAAAAAAAAAAAuwCMAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-06T15:56:54.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AboutViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\ViewModels\\AboutViewModel.cs",
-              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\ViewModels\\AboutViewModel.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\ViewModels\\AboutViewModel.cs",
-              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\ViewModels\\AboutViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T13:15:26.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegisterPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\RegisterPage.xaml.cs",
-              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\Views\\RegisterPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\RegisterPage.xaml.cs",
-              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\Views\\RegisterPage.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T13:14:08.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AboutPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\AboutPage.xaml.cs",
-              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\Views\\AboutPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\AboutPage.xaml.cs",
-              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\Views\\AboutPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T13:14:04.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\AppShell.xaml",
-              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\AppShell.xaml",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\AppShell.xaml",
-              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\AppShell.xaml",
-              "ViewState": "AQIAABUAAAAAAAAAAIBJwCIAAABqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-06T13:12:34.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AboutPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\AboutPage.xaml",
-              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\Views\\AboutPage.xaml",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\AboutPage.xaml",
-              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\Views\\AboutPage.xaml",
-              "ViewState": "AQIAABUAAAAAAAAAAIBJwB8AAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-05T18:44:31.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\LoginPage.xaml",
               "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\Views\\LoginPage.xaml",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\LoginPage.xaml",
               "RelativeToolTip": "FrontAppGym\\FrontAppGym\\Views\\LoginPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAAA5AAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAACQAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-05T18:38:07.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T17:44:23.162Z"
             },
             {
               "$type": "Document",
@@ -176,36 +72,86 @@
               "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\ViewModels\\LoginViewModel.cs",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\ViewModels\\LoginViewModel.cs",
               "RelativeToolTip": "FrontAppGym\\FrontAppGym\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAlAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADEAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T12:56:41.015Z",
+              "WhenOpened": "2024-08-16T13:01:01.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\Views\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\LoginPage.xaml.cs",
+              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\Views\\LoginPage.xaml.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T13:00:46.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WorkoutPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml.cs",
+              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml.cs",
+              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAwwD4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T15:13:20.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\RegisterPage.xaml",
+              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\Views\\RegisterPage.xaml",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\RegisterPage.xaml",
+              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\Views\\RegisterPage.xaml",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAACgAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-26T17:29:56.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WorkoutPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml",
+              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml",
+              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\Views\\WorkoutPage.xaml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-06T15:56:54.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PaymentPage.xaml",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\PaymentPage.xaml",
               "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\Views\\PaymentPage.xaml",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\PaymentPage.xaml",
               "RelativeToolTip": "FrontAppGym\\FrontAppGym\\Views\\PaymentPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAzAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAGoAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-07-31T13:03:58.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RegisterPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\RegisterPage.xaml",
-              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\Views\\RegisterPage.xaml",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\Views\\RegisterPage.xaml",
-              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\Views\\RegisterPage.xaml",
-              "ViewState": "AQIAAAwAAAAAAAAAAIBJwBkAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-26T14:48:18.024Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "WorkoutViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\ViewModels\\WorkoutViewModel.cs",
+              "RelativeDocumentMoniker": "FrontAppGym\\FrontAppGym\\ViewModels\\WorkoutViewModel.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\FrontAppGym\\FrontAppGym\\FrontAppGym\\ViewModels\\WorkoutViewModel.cs",
+              "RelativeToolTip": "FrontAppGym\\FrontAppGym\\ViewModels\\WorkoutViewModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T12:48:55.634Z"
             }
           ]
         }

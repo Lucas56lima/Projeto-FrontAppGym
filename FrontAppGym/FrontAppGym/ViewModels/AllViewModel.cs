@@ -38,13 +38,7 @@ namespace FrontAppGym.ViewModels
                 }
             }
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+        
 
         public Command TogglePasswordVisibilityCommand => new Command(() =>
         {

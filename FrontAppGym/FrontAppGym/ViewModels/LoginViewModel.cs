@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using FrontAppGym.Views;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using System.Windows.Input;
-using FrontAppGym.Views;
-using Newtonsoft.Json.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.StyleSheets;
 
 namespace FrontAppGym.ViewModels
 {
@@ -48,13 +45,13 @@ namespace FrontAppGym.ViewModels
         {
             //string insertEmail = Email;
             //string insertPassword = Password;
-            //string loginToken = await LoginAsync(insertEmail, insertPassword);           
+            //string loginToken = await LoginAsync(insertEmail, insertPassword);
 
             //if (loginToken != null)
             //{
             //    await StoreTokenAsync(loginToken);
             //    await GetTokenAsync();
-            await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
+                await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
 
             //}
         }
@@ -65,7 +62,7 @@ namespace FrontAppGym.ViewModels
             {
                 try
                 {
-                    string connectionLoginRoute = "http://10.0.2.2:7032/api/Login/login";
+                    string connectionLoginRoute = "https://10.0.2.2:7032/api/Login/login";
 
                     Uri uri = new Uri(connectionLoginRoute);
                     //client.Timeout = TimeSpan.FromSeconds(200);
